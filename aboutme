@@ -13,6 +13,7 @@
             padding: 0;
             text-align: center;
             background: #F1D3B2; /* Light background color */
+            animation: fadeIn 1s ease-in-out;
         }
         nav {
             background: #46211A; /* Primary color */
@@ -26,11 +27,13 @@
         }
         nav a:hover {
             text-decoration: underline;
+            animation: scaleUp 0.3s ease;
         }
         header {
             padding: 2rem 0;
             background: #A43820; /* Accent color */
             margin-bottom: 2rem;
+            animation: slideIn 1s ease-out;
         }
         h1 {
             font-family: 'Playfair Display', serif;
@@ -43,6 +46,7 @@
             margin: 2rem;
             border-radius: 8px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1.5s ease-in-out;
         }
         table {
             width: 70%; /* Reduced table width to 70% */
@@ -96,42 +100,64 @@
             100% { transform: scale(1.1); }
         }
 
-        body {
-            font-family: 'DM Sans', sans-serif;
-            margin: 0;
-            padding: 0;
+        /* Sidebar Dropdown Styles */
+        #sidebar {
+            position: fixed;
+            right: 0;
+            top: 20px; /* Align with the play and stop buttons */
+            width: 150px;
+            background-color: #46211A;
+            border-radius: 8px 0 0 8px;
+            box-shadow: -2px 2px 10px rgba(0, 0, 0, 0.1);
+            z-index: 9999;
             text-align: center;
-            background: #F1D3B2;
-            animation: fadeIn 1s ease-in-out;
         }
 
-        nav a:hover {
-            text-decoration: underline;
-            animation: scaleUp 0.3s ease;
-        }
-
-        header {
-            padding: 2rem 0;
-            background: #A43820;
-            margin-bottom: 2rem;
-            animation: slideIn 1s ease-out;
-        }
-
-        .about-me-container {
-            padding: 2rem;
-            background: #fff;
-            margin: 2rem;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            animation: fadeIn 1.5s ease-in-out;
-        }
-
-        footer p {
+        #dropdown-btn {
+            background-color: #A43820;
             color: white;
+            padding: 10px;
+            border: none;
+            width: 100%;
+            text-align: center;
+            font-size: 1rem;
+            cursor: pointer;
+            outline: none;
+            border-radius: 8px 0 0 0;
         }
-        
+
+        #dropdown-btn:hover {
+            background-color: #333;
+        }
+
+        #dropdown-content {
+            display: none;
+            background-color: #46211A;
+            padding: 10px 0;
+        }
+
+        #dropdown-content a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 8px 10px;
+            font-size: 0.9rem;
+        }
+
+        #dropdown-content a:hover {
+            background-color: #A43820;
+        }
+
+        /* JavaScript to toggle dropdown visibility */
+        document.getElementById('dropdown-btn').addEventListener('click', function () {
+            const dropdownContent = document.getElementById('dropdown-content');
+            if (dropdownContent.style.display === "block") {
+                dropdownContent.style.display = "none";
+            } else {
+                dropdownContent.style.display = "block";
+            }
+        });
     </style>
-    
 </head>
 <body>
     <header>
@@ -167,23 +193,57 @@
                 As I wrap up my studies, I'm taking a step back to enjoy time with friends and reflect on my experiences. I'm excited for what lies ahead and look forward to making lasting memories before we all go our separate ways!
             </td>
         </tr>
+    </table>
 
-        <!-- Skills & Expertise -->
-        <table>
-            <caption style="font-family: 'Playfair Display', serif; font-size: 2rem; margin-bottom: 1rem;">Skills & Expertise</caption>
-            <tr>
-                <th>Skill</th>
-                <th>Description</th>
-            </tr>
-            <tr>
-                <td>Project Management</td>
-                <td>Proficient in HTML, CSS, JavaScript, and React for building responsive web applications.</td>
-            </tr>
-            <tr>
-                <td>Creative * </td>
-                <td>Experienced with Node.js, Express, and working with APIs for server-side development.</td>
-            </tr>
-        </table>
+    <!-- Personal Details Table -->
+    <table>
+        <caption style="font-family: 'Playfair Display', serif; font-size: 2rem; margin-bottom: 1rem;">Personal Details</caption>
+        <tr>
+            <th>Details</th>
+            <th>Information</th>
+        </tr>
+        <tr>
+            <td>Name</td>
+            <td>Alia Rahmatunnisa binti Mohd Rosly</td>
+        </tr>
+        <tr>
+            <td>Hobbies</td>
+            <td>Design, Writing, Acting, Project Organization</td>
+        </tr>
+        <tr>
+            <td>Favorite Color</td>
+            <td>Red</td>
+        </tr>
+        <tr>
+            <td>Favorite Activity</td>
+            <td>Theater, Collaborating on Creative Projects</td>
+        </tr>
+    </table>
+
+    <!-- Skills Table -->
+    <table>
+        <caption style="font-family: 'Playfair Display', serif; font-size: 2rem; margin-bottom: 1rem;">Skills</caption>
+        <tr>
+            <th>Skill</th>
+        </tr>
+        <tr>
+            <td>Design</td>
+        </tr>
+        <tr>
+            <td>Writing</td>
+        </tr>
+        <tr>
+            <td>Project Management</td>
+        </tr>
+        <tr>
+            <td>Acting</td>
+        </tr>
+        <tr>
+            <td>Collaboration & Teamwork</td>
+        </tr>
+    </table>
+
+    <br><br>
 
     <!-- Footer code -->
     <footer>
