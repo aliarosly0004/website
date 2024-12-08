@@ -125,6 +125,11 @@
         <a href="quotes.html">Quotes</a>
         <a href="contact.html">Contact</a>
     </nav>
+
+
+
+
+
   <div class="content">
     <div class="portfolio">
         <div class="portfolio-item">
@@ -145,6 +150,8 @@
         <!-- Add more portfolio items as needed -->
     </div>
 </div>
+
+
 
 <!-- Footer code -->
 <footer>
