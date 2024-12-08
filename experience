@@ -187,7 +187,6 @@
         <p>&copy; 2024 Alia's Portfolio. All rights reserved.</p>
         <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
     </footer>
-
     <style>
     /* Animation Definitions */
     @keyframes fadeIn {
