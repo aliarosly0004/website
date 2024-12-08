@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'DM Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+            animation: fadeIn 1s ease-in-out;
+        }
+        nav {
+            background: #330000; /* Dark red */
+            padding: 1rem;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2rem;
+        }
+        nav a:hover {
+            text-decoration: underline;
+            animation: scaleUp 0.3s ease;
+        }
+        header {
+            padding: 2rem 0;
+            background: #73605B; /* Warm brown */
+            margin-bottom: 2rem;
+            text-align: center;
+            animation: slideIn 1s ease-out;
+        }
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            color: white;
+        }
+        p {
+            font-size: 1.2rem;
+            color: white; /* Keeping the font family color white */
+        }
+        .experience-container {
+            padding: 2rem;
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .experience-card {
+            background: #D09683; /* Light peach */
+            padding: 20px;
+            margin-bottom: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            text-align: center;
+        }
+        .experience-card:hover {
+            transform: translateY(-10px);
+        }
+        .experience-card h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            color: #330000; /* Dark red */
+            margin-bottom: 0.5rem;
+        }
+        .experience-card p {
+            font-size: 1rem;
+            color: #555;
+        }
+        .experience-card .date {
+            font-size: 0.9rem;
+            color: #777;
+            margin-bottom: 1rem;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 1024px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            .experience-container {
+                padding: 1.5rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+            .experience-container {
+                padding: 1rem;
+            }
+            .experience-card h3 {
+                font-size: 1.6rem;
+            }
+            nav a {
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 1.5rem;
+            }
+            .experience-container {
+                padding: 0.5rem;
+            }
+            .experience-card h3 {
+                font-size: 1.4rem;
+            }
+            nav a {
+                font-size: 0.9rem;
+            }
+        }
+
+        /* Footer Style from Previous Conversations */
+        footer {
+            background-color: #330000; /* Dark red */
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+        footer p {
+            margin: 0.5rem 0;
+        }
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Experience</h1>
+        <p>Explore the professional journey and the experiences that shaped my career</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="aboutme.html">About Me</a>
+        <a href="interest.html">Personal Interest</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="experience.html" class="active">Experience</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="quotes.html">Quotes</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+   <div class="experience-container">
+    <div class="experience-card">
+        <img src="interships.jpg" alt="Practical Training" style="width: 400px; height: auto; margin-bottom: 3px;">
+        <h3>Education & Practical Training</h3>
+        <p class="date">July 2024 - September 2024</p>
+        <p>
+            Currently working as a Full Stack Developer at Tech Solutions Inc., building scalable web applications with React, Node.js, and MongoDB. I collaborate closely with the design and product teams to ensure the smooth development and delivery of features.
+        </p>
+    </div>
+
+    <div class="experience-card">
+        <img src="stage.jpg" alt="Stage Manager" style="width: 400px; height: auto; margin-bottom: 3px;">
+        <h3>Stage Manager</h3>
+        <p class="date">Mac 2024</p>
+        <p>
+            Started my career as a Junior Developer at Web Creatives. I gained valuable experience working on front-end development using HTML, CSS, and JavaScript. I also assisted in the backend development using Node.js and Express for various client projects.
+        </p>
+    </div>
+
+    <div class="experience-card">
+        <img src="member.jpg" alt="Member of Sekreteriat Parlimen Mahasiswa" style="width: 400px; height: auto; margin-bottom: 3px;">
+        <h3>Member of Sekreteriat Parlimen Mahasiswa</h3>
+        <p class="date">October 2024</p>
+        <p>
+            As an intern at DevTech, I had the opportunity to learn about web development by working with senior developers. I helped build features for internal projects and gained hands-on experience with various technologies like React and Python.
+        </p>
+    </div>
+</div>
+
+    <footer>
+        <p>&copy; 2024 Alia's Portfolio. All rights reserved.</p>
+        <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </footer>
+
+    <style>
+    /* Animation Definitions */
+    @keyframes fadeIn {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+    }
+
+    @keyframes slideIn {
+        0% { transform: translateY(-30px); opacity: 0; }
+        100% { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes scaleUp {
+        0% { transform: scale(1); }
+        100% { transform: scale(1.1); }
+    }
+
+    body {
+        font-family: 'DM Sans', sans-serif;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        background: #f4f4f4;
+        animation: fadeIn 1s ease-in-out;
+    }
+
+    nav a:hover {
+        text-decoration: underline;
+        animation: scaleUp 0.3s ease;
+    }
+
+    header {
+        padding: 2rem 0;
+        background: #73605B;
+        margin-bottom: 2rem;
+        animation: slideIn 1s ease-out;
+    }
+
+    .about-me-container {
+        padding: 2rem;
+        background: #fff;
+        margin: 2rem;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        animation: fadeIn 1.5s ease-in-out;
+    }
+
+    /* Image Slider Styles */
+    .slider-button {
+        position: absolute;
+        top: 50%;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        padding: 10px;
+        border: none;
+        cursor: pointer;
+        z-index: 10;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+    }
+
+    .slider-container:hover .slider-button {
+        opacity: 1;
+    }
+</style>
+</body>
+</html>
